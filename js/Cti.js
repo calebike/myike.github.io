@@ -4,7 +4,7 @@ $("#imgheader1").load('img/Imageheader1.html');
 $("#boardmangament").load('content/boadmanagement.html');
 $("#IndexkkPhotos").load('content/IndexkkPhotos.html');
 $("#ProductSlide").load('content/ProductSlide.html');
-$("#about").load('content/‌indexkkabout.html');
+$("#about").load('content/indexkkabout.html');
 
 
 $("div#nav2 a").click(function(){
