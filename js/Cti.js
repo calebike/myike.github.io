@@ -1,6 +1,6 @@
 $("document").ready(function(){
-$("#imgheader").load('img/Imageheader.html');
-$("#imgheader1").load('img/Imageheader1.html');
+$("#imgheader").load('Imageheader.html');
+$("#imgheader1").load('Imageheader1.html');
 $("#boardmangament").load('content/boadmanagement.html');
 $("#IndexkkPhotos").load('content/IndexkkPhotos.html');
 $("#ProductSlide").load('content/ProductSlide.html');
