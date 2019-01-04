@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #069;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 940px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 60px;
+  height: 150px; /* Used in this example to enable scrolling */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.clearfixb1 {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:440px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	
+}
+a:link{
+text-decoration:none;
+color:white;
+padding:10px;
+margin-left:5px;
+margin-right:5px;	
+	
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  text-align:center;
+ 
+}
+.clearfixb1 {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:440px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#939;
+	
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 35%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: -30.5s;
+  animation-name: fade;
+  animation-duration:-30.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #09C;
+	font-size:12px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #069;
+}
+
+.active {
+    background-color: red;
+}
+span.c {
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+imgg {
+    float: right;
+}
+imgg1 {
+    float: right;
+}
+div.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 85%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+.IMGH {
+    float:left;
+}
+.clearfixbx {
+    overflow: auto;
+	
+    padding: 5px;
+	width:250px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	
+	float:left;
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+.clearfixb1k {
+    overflow: auto;
+	border: ;
+    padding: 5px;
+	width:1000px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+
+	color:#09F; 
+	font-size: 12px
+}
+.clearfixb1p {
+    
+	
+    padding:2px;
+	width:100%;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.clearfixb1pp {
+    
+	
+    padding:2px;
+	width:725px;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+-->
+</style>
+</head>
+
+<body>
+
+<div class="container">
+ <center> <div class="header">
+ <div class="clearfixb1p" >
+ <img src="New Picture2.png" alt="Mountains" width="210" height="118" align="baseline" style="float:left;display:inline-block; position:static">
+   
+</div>
+
+    <!-- end .header --></div></center>
+   <br /> <br /> <br /> <br /><br /><br />
+    
+    
+    
+    <div style="background-color:#0099CC" class="topnav">
+      <a href="try2.html" target="_parent">Home</a>
+  <a href="try21.html"  target="_parent">About Us</a>
+  <a href="try22.html" target="_parent">Product</a>
+  <a href="try23.html" target="_parent">News</a>
+  <a href="try24.html" target="_parent">Management</a>
+  <a href="try25.html" target="_parent">Contact Us</a>
+  <a href="try26.html" target="_parent">Photos</a> 
+</div>
+<br />  
+  
+   <div class="slideshow-container">
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="Citiz/IMGP0015.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+  
+  </div>
+    <div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Citiz/IMGP0004.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Citiz/IMGP0012.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Citiz/IMGP0037.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+ 
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Citiz/IMGP0040.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+ 
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Citiz/IMGP0026.JPG" style="width:700px;height:400px;margin-left:8px" width="600" height="300">
+  
+ 
+</div>
+<div>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+
+<hr>
+</div>
+<div>
+<p style="float:left">
+<img src="Citiz/IMGP0007.JPG" alt="Pineapple" width="230" height="191" class="imgg" style="width:300px;height:350px">
+</p>
+<p><img src="Citiz/IMGP0041.JPG" alt="Pineapple" width="391" height="191" class="imgg1" style="width:580px;height:350px;margin-right:"></p>
+</div>
+<p></p>
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>About Citizens Rural Bank Limited&nbsp;
+  </p>    
+</b></div>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Citiz/IMGP0040.JPG" alt="5Terre" width="600" height="400" align="middle"></a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery"><a target="_blank" href="img_forest.jpg"><img src="Citiz/IMGP0036.JPG" alt="Forest" width="600" height="400" style="margin:0px">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="Citiz/IMGP0008.JPG" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0023.JPG" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<p><br /><br /><br /><br /><br /><br /><br /><br />
+<p>
+<p><br />
+  <br /><br />
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b><b>Management&nbsp;</b>
+    </p>    
+</b></div>
+<hr>
+
+<div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Kenneth Wotortsi</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; General Manager
+  </a>
+ 
+</div>
+<div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Mark Gyapong</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Head of Operations
+  </a>
+ 
+</div>
+ <div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Isaac Owusu</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Head Of IT
+  </a>
+ 
+</div>
+<div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block;border: 1px solid #777">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Thomas Takyi</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Head of Account
+  </a>
+ 
+</div>
+<div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Emmanuel Osei Kumi</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Head-HR&nbsp;&amp;&nbsp;Audit
+  </a>
+ 
+</div>
+<div class="clearfixb">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Head Of Credit
+  </a>
+ 
+</div> 
+</p>
+<p><br>
+  </p>
+  
+<p><br>
+</p>
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>Products&nbsp;
+  </p>    
+</b></div>
+<hr>
+
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Apexlink[1].jpg" alt="5Terre" width="600" height="400"></a>
+  <div class="desc" style="font-size:12px">Insatant  Money Transfer From Rural To Rural Bank(I-Trans)</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Apexlink[1].jpg" alt="5Terre" width="600" height="400"></a>
+  <div class="desc" style="font-size:12px">Insatant  Money Transfer From Rural To Rural Bank(I-Trans)</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Apexlink[1].jpg" alt="5Terre" width="600" height="400"></a>
+  <div class="desc" style="font-size:12px">Insatant  Money Transfer From Rural To Rural Bank(I-Trans)</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Apexlink[1].jpg" alt="5Terre" width="600" height="400"></a>
+  <div class="desc" style="font-size:12px">Insatant  Money Transfer From Rural To Rural Bank(I-Trans)</div>
+</div>
+<br><br>
+<p>
+</p>
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>Photos&nbsp;
+    </p>    
+</b></div>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0022.JPG" alt="Mountains" width="600" height="400">
+ 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0039.JPG" alt="Mountains" width="600" height="400"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0005.JPG" alt="Mountains" width="600" height="400"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0007.JPG" alt="Mountains" width="600" height="400"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0023.JPG" alt="Mountains" width="600" height="400"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0041.JPG" alt="Mountains" width="600" height="400" style="margin:0px"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0019.JPG" alt="Mountains" width="600" height="400" style="margin:0px"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Citiz/IMGP0026.JPG" alt="Mountains" width="600" height="400"> 
+  </a>
+ <div class="desc">Add a description of the image here</div>
+</div>
+ <p><br><br><br><br>
+  </p>
+
+ <p><br>
+ </p>
+ <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F">
+   
+   <p><b>Contact Details&nbsp;
+    </p>    
+  </p>
+</div>
+<hr>
+<p><u><b style="font-size:12px;color:; float:left">&nbsp;&nbsp;</b></u></p>
+<p>&nbsp;</p>
+<p><u><b style="font-size:12px;color:; float:left">&nbsp;<u>OFFICE LOCATIONS/ADDRESSES</u> </b></u><br>
+</p>
+<div class="clearfixbx">
+  
+  <b style="font-size:14px; font-family:Verdana, Geneva, sans-serif"">Nsawam Branch</b>
+  <br>
+ Adjacent former Magistrate Court<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233) 332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Adeiso Branch</b><br>
+ Adjacent Adeiso Taxi Rank<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Kotoku Branch</b><br>
+ Around Kotoku Lorry Station<br>
+  P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>
+  
+
+  <br>
+  </p>
+<div class="content">
+ 
+  <!-- end .content --></div>
+  <div class="footer">
+    <p style="float:left">Footer</p>
+    <p style="float:right">kkkkk</p>
+    <br />
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+   
+  <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

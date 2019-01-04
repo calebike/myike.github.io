@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Citizens Rural Bank Limited</title>
+<link href="GAR.jpg" rel="shortcut icon" />
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #069;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 940px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #ADB96E;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 60px;
+  height: 150px; /* Used in this example to enable scrolling */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #069;
+  color: black;
+}
+
+.clearfixb1 {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:440px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	
+}
+a:link{
+text-decoration:none;
+color:white;
+padding:10px;
+margin-left:5px;
+margin-right:5px;	
+	
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  text-align:center;
+ 
+}
+.clearfixb1 {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:440px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#939;
+	
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 35%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: -30.5s;
+  animation-name: fade;
+  animation-duration:-30.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #09C;
+	font-size:12px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #069;
+}
+
+.active {
+    background-color: red;
+}
+span.c {
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+imgg {
+    float: right;
+}
+imgg1 {
+    float: right;
+}
+div.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 85%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+.IMGH {
+    float:left;
+}
+.clearfixbx {
+    overflow: auto;
+	
+    padding: 5px;
+	width:250px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	
+	float:left;
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+.clearfixb1k {
+    overflow: auto;
+	border: ;
+    padding: 5px;
+	width:1000px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+
+	color:#09F; 
+	font-size: 12px
+}
+.clearfixb1p {
+    
+	
+    padding:2px;
+	width:100%;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.clearfixb1pp {
+    
+	
+    padding:2px;
+	width:725px;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+-->
+</style>
+</head>
+
+<body>
+
+<div class="container">
+ <center> <div class="header">
+ <div class="clearfixb1p" >
+ <img src="New Picture2.png" alt="Mountains" width="210" height="118" align="baseline" style="float:left;display:inline-block; position:static">
+  <div width="199" height="118" class="clearfixb1pp" style="float:left;display:inline-block"><br><marquee style="font-size:14px; color:#0099cc" ><br>Welcome To Citizens Rural Bank &nbsp;||&nbsp; Banking with us is secured &nbsp;||&nbsp;Your future is secured</marquee></div>
+   
+</div>
+
+    <!-- end .header --></div></center>
+   <br /> <br /> <br /> <br /><br /><br />
+    
+    
+    
+    <div style="background-color:#0099CC" class="topnav">
+      <a href="try2.html" target="_parent">Home</a>
+  <a href="AboutUs.html"  target="_parent">About Us</a>
+  <a href="try22.html" target="_parent">Product</a>
+  <a href="try23.html" target="_parent">News</a>
+  <a href="try24.html" target="_parent">Management</a>
+  <a href="try25.html" target="_parent">Contact Us</a>
+  <a href="try26.html" target="_parent">Photos</a> 
+   <a href="" target="_parent">Branches</a>
+</div>
+<br />
+  <div align="left" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F"><b>&nbsp;&nbsp;&nbsp;&nbsp;Current Account 
+  </p>    
+</b></div>
+<hr>
+<p></p>
+  <p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+  <br>
+ Do you need an account that allows you to do more than receive and pay money? Then an CRB current account for individuals, churches, businesses, societies and schools is exactly what you need.<br><br><br>
+  
+
+Target Customers <br><br style="color:#906">
+&ndash;&nbsp;<c style="color:#906">General Public</c><br>
+&ndash;&nbsp;<c style="color:#906">Individuals</c><br>
+&ndash;&nbsp;<c style="color:#906">Traders, workers, groups, Companies</c><br><br><br><br>
+
+Features and benefits<br><br><c style="color:#906">
+&ndash;&nbsp;Facilities to make payments such as standing orders</c><br><c style="color:#906"> 
+&ndash;&nbsp;Minimum initial deposit</c><br>
+<c style="color:#906">
+&ndash;&nbsp;Minimum monthly service fee
+&ndash;&nbsp;No restriction on the number of withdrawals</c><br><c style="color:#906">
+&ndash;&nbsp;Lodgments and withdrawals by third parties through the use of cheques are accepted</c>.<br><c style="color:#906">
+&ndash;&nbsp;Periodic statement of transactions on your account and on request</c><br><c style="color:#906">
+&ndash;&nbsp;Free deposits at any of our branches </c><br><c style="color:#906">
+&ndash;&nbsp;Fully networked and efficient banking services</c><br><c style="color:#906"> 
+&ndash;&nbsp;Consumer loans available to account holders </c><br>
+</p>
+
+  <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F""><b>Savings Account&nbsp; 
+  </p>    
+</b></div>
+<hr>
+<P></P>
+<p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+<br> 
+
+Do you want to enjoy good future value for your money invested today? Then take advantage of CRB savings account. We offer a wide array of products from call account to a fixed deposit at competitive interest-yielding rate.<br><br><br>
+   
+
+Target Customers:<br><br> 
+&ndash;&nbsp;General Public<br>
+&ndash;&nbsp;Individuals<br>
+&ndash;&nbsp;Traders, workers, groups
+<br><br><br>
+
+Features and benefits:<br><br>
+&ndash;&nbsp;Ordinary savings account<br>
+&ndash;&nbsp;Minimum initial deposit is GH¢ 5.00<br> 
+&ndash;&nbsp;minimum operating balance is GH¢ 10.00<br>
+&ndash;&nbsp;Use of passbooks for transaction records<br>
+&ndash;&nbsp;Offer competitive interest rate<br>
+&ndash;&nbsp;Safe custody of your monoey<br>
+&ndash;&nbsp;Statement of accounts on request<br>
+&ndash;&nbsp;Free deposits at any of our branches<br> 
+&ndash;&nbsp;Fully networked and efficient banking services<br> 
+&ndash;&nbsp;No COT charges
+
+
+</p>
+  <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F""><b>Fixed Deposit&nbsp; 
+  </p>    
+</b></div>
+<hr>
+<P></P>
+<p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+<br>
+ 
+A fixed deposit is an investment account into which money is deposited for a fixed period, and the interest does not fluctuate. A fixed deposit offers interest rates higher than an ordinary savings account and is ideal if you want to save for a specific goal, like the deposit for a wedding or a year-end holiday or project.
+<br><br>
+Basic Requirements:<br><br> 
+&ndash;&nbsp;Prospective client should have an existing Current Accounts or Savings Account<br><br>
+<br> 
+
+
+Features:<br><br>
+&ndash;&nbsp;You must make a minimum investment of at least GHC500<br>
+&ndash;&nbsp; You can choose the date on which you would like your investment to mature<br>
+&ndash;&nbsp;There are no service fees charged for a fixed deposit<br>
+&ndash;&nbsp; High and competitive interest rates.<br> 
+&ndash;&nbsp; Tailor made for short to medium term investments of 3 months, 6 Months, and 12 Months<br>
+&ndash;&nbsp; Options to roll over investment at the end of any given period.<br>
+&ndash;&nbsp; You can choose to have more than one fixed deposit if you want to save for different goals<br> 
+
+
+
+
+  <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F"><b>Loans and Overdraft&nbsp; 
+  </p>    
+</b></div>
+<hr>
+<P></P>
+<p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+<br>
+1.Personal Loans:<br><br> Loans that can be used for personal reasons/ personal exigencies at competitive interest rates. Such as;<br><br><br>
+&ndash;&nbsp; Salary loans<br>
+&ndash;&nbsp; Funeral loans<br>
+&ndash;&nbsp; School fees loans<br>
+&ndash;&nbsp; Medical loans<br>
+&ndash;&nbsp; Rent loans<br>
+&ndash;&nbsp; Pension loans<br>
+&ndash;&nbsp; Short term Advances / Overdraft<br>
+&ndash;&nbsp; Home improvement / Building loans<br>
+&ndash;&nbsp; Loans covered by credit life insurance policy<br><br><br>
+
+2. Corporate Loans/ Commercial Loans: <br><br>A full suite of lending product tailored to middle market and corporate customers.<br><br>
+&ndash;&nbsp; SME's<br>
+&ndash;&nbsp; Cottage industries<br>
+&ndash;&nbsp; Auto loan scheme<br><br><br>
+
+3. Group Loans:<br><br> Loan products enable clubs, associations, co-operatives, churches, mosques, schools to access financing at competitive interest rates. <br><br>
+
+4. Micro-finance / Susu loan scheme:<br><br> A product designed to assist organized groups and individuals to raise working capital for their economic ventures. This product is targeted at trades, artisans and micro-entrepreneurs. <br><br>
+
+5. Agri-business loans:<br><br> Debt-based funding that help you purchase tools, improve or re-finance your farm business.<br><br>
+&ndash;&nbsp; Crops<br>
+&ndash;&nbsp; Livestock<br>
+&ndash;&nbsp; Agro-processing<br>
+&ndash;&nbsp; Marketing<br><br><br> 
+
+6. Transport Loans: <br><br>Is a facility that enables Transport Unions to acquire vehicles at competitive interest rate.<br><br>
+&ndash;&nbsp;Auto Loan Scheme<br><br><br> 
+
+
+Overdrafts<br><br>
+
+An overdraft is a loan facility that is tailored to meet your need for money over and above your credit balance. It's the ideal way to manage your money.<br><br>
+
+Features:<br><br> 
+&ndash;&nbsp;Once arranged, the facility is available and can be used whenever required<br>
+&ndash;&nbsp; You don't have to transfer funds from a separate loan account since the approved limit is loaded on to your current account.<br>
+&ndash;&nbsp; The facility remains available even if you don't use it (for the agreed period subject to review)<br>
+&ndash;&nbsp;An overdraft is one of the least expensive forms of short-term finance<br>
+&ndash;&nbsp;Repayment terms are negotiable up to 12 months <br>
+&ndash;&nbsp; Loans covered by credit life insurance policy
+
+
+  <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F"><b>Money Transfer&nbsp; 
+  </p>     
+</b></div>
+<hr>
+<P></P>
+<p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+<br>
+  Citizens Rural Bank is Strategically positioned to provide innovative solutions to your domestic and foreign money transfer needs. Our transfer services are not limited to our customers only, non-customers are always welcome to benefit from our excellent, swift and customer-oriented services. <br><br>
+
+Our computer systems are directly connected to the award-winning Apex Link Electronic Money Transfer Service (iTrans) thereby giving us the unique capability to speedily transfer funds to all other rural banks in Ghana in a twinkle of an eye.<br><br>
+
+Avoid the risks association with moving around with physical cash. Visit any of our our branches for a fast, convenient, instant, safe and secure money transfer services.<br><br> <br> <br> 
+
+Target Customers:<br>
+
+All who want to remit money to their<br> 
+&ndash;&nbsp;Wards in school<br> 
+&ndash;&nbsp;Parents and relatives in rural communities<br> 
+&ndash;&nbsp;Trading partners in other parts of the country<br> 
+&ndash;&nbsp;spouse and dependents <br>
+&ndash;&nbsp;etc.
+<br><br>
+ 
+
+To Receive Remittance/Money Transfer at any of our Branches, you need to :<br> 
+&ndash;&nbsp;Provide a valid photo ID (driver's license, voter's ID, passport, NHIS card, national ID card or students ID)<br>
+&ndash;&nbsp;Provide correct transaction code/number<br>
+&ndash;&nbsp;Provide name and address of sender<br> 
+&ndash;&nbsp;Provide address and telephone number(s)<br>
+&ndash;&nbsp;Provide secret message where applicable
+<br><br>
+ 
+
+Why Choose Citizens Rural bank :<br> 
+&ndash;&nbsp;Receive money at any of our  networked branches<br>
+&ndash;&nbsp;Receive funds directly into your Citizens Rural Bank account(s)<br>
+&ndash;&nbsp;Have access to your funds at any of our branches<br>
+&ndash;&nbsp;Service is available from Monday to Friday during working hours<br>
+&ndash;&nbsp;You receive and are paid your funds in a secure banking environment 
+<br><br>
+ 
+
+Also Available are : <br>
+&ndash;&nbsp;Western Union Money Transfer <br>
+&ndash;&nbsp;MoneyGram<br>
+&ndash;&nbsp;Ria Transfer <br>
+&ndash;&nbsp;Mobile Banking <br>
+&ndash;&nbsp;E-Zwich -Biometric non cash means of carrying money on a card also available at Citizens Rural Bank
+
+ <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F"><b>Company/Group Account&nbsp; 
+  </p>     
+</b></div>
+<hr>
+<P></P>
+<p style="color:#0OO; font-size: 14px;font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+<br>
+
+Basic Requirements <br><br>
+&ndash;&nbsp;In the case of a sole proprietorship, prospective client will have to provide a certificate to commence business and a form A.<br>
+&ndash;&nbsp;In the case of a partnership, prospective company will have to provide a Partnership deed and a copy of the company's constitution or trust of &nbsp;&nbsp;deeds.<br>
+&ndash;&nbsp;In the case of churches and associations, prospective churches or associations will have to provide a certificate from the registrar &nbsp;&nbsp;&nbsp;of societies, a resolution letter and a constitution or by laws.<br>
+&ndash;&nbsp;In the case of a limited Liability Company, the prospective institution will have to  provide a certificate of incorporation,a certificate of commencement of business, a resolutions letter and a copy of the company's regulations. <br>
+
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;color:#09F"><b> Contact Details&nbsp;
+  </p>    
+</b></div>
+<hr>
+<u><b style="font-size:12px;color:; float:left">&nbsp;&nbsp;&nbsp;<u>OFFICE LOCATIONS/ADDRESSES</u> </b></u><br>
+  <div class="clearfixbx">
+  
+ <b style="font-size:14px">Nsawam Branch</b>
+ <br>
+ Adjacent former Magistrate Court<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233) 332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Adeiso Branch</b><br>
+ Adjacent Adeiso Taxi Rank<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Kotoku Branch</b><br>
+ Around Kotoku Lorry Station<br>
+  P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>
+  
+
+  <br>
+  </p>
+
+ 
+
+  
+
+ 
+  <div class="content">
+  
+   
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>Footer</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

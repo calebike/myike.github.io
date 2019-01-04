@@ -1,0 +1,704 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="width=device-width,initial-scale=1"  name="viewport">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Citizens Rural Bank Limited</title>
+<link href="Apexlink[1].jpg" rel="shortcut icon" />
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background:#069;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+footer {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background:  #069;
+	margin: 0;
+	padding: 0;
+	color: white;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: ;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+a:link{
+text-decoration:none;
+color:white;
+padding:10px;
+margin-left:5px;
+margin-right:5px;	
+	
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  text-align:center;
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 35%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: -30.5s;
+  animation-name: fade;
+  animation-duration:-30.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #09C;
+	font-size:12px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #069;
+}
+
+.active {
+    background-color: red;
+}
+span.c {
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+imgg {
+    float: right;
+}
+imgg1 {
+    float: right;
+}
+div.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 85%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+.IMGH {
+    float:left;
+}
+.clearfixb {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:290px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	
+}
+.clearfixb1 {
+    overflow: auto;
+	border: 1px solid #999;
+    padding: 5px;
+	width:440px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	
+}
+.clearfixb11 {
+     overflow: auto;
+	border: ;
+    padding:8px;
+	width:450px;
+	text-align: justify;
+	margin:10px;
+	background-color: #999 ;
+	float:left;
+	font-family: "Times New Roman", Times, serif;
+	font-size:12.5px;
+	height:220px;
+
+	
+}
+
+.clearfixbx {
+    overflow: auto;
+	
+    padding: 5px;
+	width:250px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	
+	float:left;
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+.clearfixb1k {
+    overflow: auto;
+	border: ;
+    padding: 5px;
+	width:1000px;
+	text-align: justify;
+	margin:15px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+
+	color:#09F; 
+	font-size: 12px
+}
+.clearfixb1p {
+    
+	
+    padding:2px;
+	width:100%;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.clearfixb1pp {
+    
+	
+    padding:2px;
+	width:725px;
+	text-align: justify;
+	margin:0px;
+	background-color: ;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 60px;
+  height: 150px; /* Used in this example to enable scrolling */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="clearfixb1p">
+ <img src="New Picture2.png" alt="Mountains" width="210" height="118" style="float:left;display:inline-block;position:static">
+    <div width="199" height="118" class="clearfixb1pp" style="float:left;display:inline-block"><br><marquee style="font-size:14px; color:#0099cc" ><br>Welcome To Citizens Rural Bank &nbsp;||&nbsp; Banking with us is secured &nbsp;||&nbsp;Your future is secured</marquee></div>
+</div>
+<br><br><br><br><br><br>
+
+<div style="background-color:#0099CC" class="topnav">
+<ul>
+  <li><a href="Index2.html" target="_parent">Home</a></li>
+  <li><a href="#" target="_parent">About Us</a></li>
+<li><a href="Products.html" target="_parent">Products</a></li>
+  <li><a href="#about">News</a></li>
+  <li><a href="#about">Management</a></li>
+    <li><a href="#about">Contact Us</a></li>
+      <li><a href="Gallery.html" target="_parent">Photos</a></li>
+      <li><a href="#about">FAQ</a></li>
+</ul>
+
+</div>
+  <div class="">
+  <p></p>
+  
+  <p></p>
+  <div align="left" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>&nbsp;&nbsp;&nbsp;&nbsp;Brief History  
+  </p>    
+</b></div>
+<hr>
+<p></p>
+  <p style="color: #000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+  <br>
+ Prior to the advent of rural banking in Ghana, some commercial banks were unwilling to operate in rural communities. The few who ventured demanded collaterals which the customers could hardly provide. Having considered critically the inadequacy of services rendered by commercial banks to rural Ghana, the Bank of Ghana decided to encourage the establishment of banks in, and owned by rural communities.<br><br><br>
+  
+ These banks were expected to have a better understanding of the conditions in which their customers who are mostly farmers, fishermen and artisanal craftmen since they lived and worked in the same communities with them. Such bank were also expected to provide accessible credit and to support rural and community development. Importantly, it was also the wish of the Central Bank to deepen the habit of savings and to encourage them from keeping their wealth under their beds. The first of such rural banks was started at Agona Nyakrom in the Central Region in 1976. The success story of this pioneer encouraged many other rural communities allover the country to to setup their own banks under the auspices of the Central bank.<br><br><br>
+
+Established in 1985, the Citizens Rural Bank is strategically sited at Abokobi to bring banking services to the door-steps of the people in the communities near Abokobi. The main aim of the bank is contribute to efforts at raising the standard of living.
+This aim, the bank continues to focus on by always facilitating the creation of opportunities for the growth of small business enterprises. The bank is headquartered in Abokobi, a town which lies about 30Km North-West of the capital city, off the Accra-Aburi road.
+<br><br><br>
+The bank is run by a team of well experienced and highly motivated staff who continue to drive the design and roll-out of innovative services and products to fully satisfy the banking needs of the good people of Abokobi and its environs.<br><br><br>
+</p>
+
+  <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>Board Of Directos&nbsp;
+  </p>    
+</b></div>
+<hr>
+<P></P>
+<p style="color:#09F; font-size: 14px">
+ <br>
+  <div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Board Chairman
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Vice Chairman/Legal Advisor
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Secretary
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Member
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Member
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Member
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Member
+  </a>
+ 
+</div>
+<div class="clearfixb1">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="61062622.jpg" alt="Mountains" width="70" height="65"style="float:left;display:inline-block">&nbsp;<b style="font-family:'Arial Black', Gadget, sans-serif">Christian Wunyo</b><br style="font-family:Verdana, Geneva, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Member
+  </a>
+ 
+</div> 
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b>Our Staffs&nbsp;
+  </p>    
+</b></div>
+<hr>
+<p></p>
+  <p style="color:#000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif"">
+  
+ CRB is committed to developing its staff to meet new challenges in a competitive market. In this light, CRB has a comprehensive all-year round training programme for staff at all levels. These are designed to assist our staff to develop the necessary skills and attributes to deliver the best service to our customers.</p> 
+  
+   <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Mission and Vision&nbsp;
+  </p>    
+</b></div>
+<hr>
+<p></p>
+<p style="color:#000; font-size: 14px; float:left; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">Mission:
+ <br><br>
+ Our Mission is to develop a financial institution that will serve as the engine of economic growth and development in its catchment area.By mobilizing available funds for investment in catchment area and offering quality financial services,exceptional customer service and building a highly satisfied and motivated workforce. 
+
+<br><br>
+</p>
+<p style="color:#000; font-size: 14px; float:right; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">Vision:<br><br>
+
+Our Vision is to provide high quality financial products and services to our customers ;to strive to be number one in customer service,employee satisfaction and profitability and to strive to be the bank of choice in its area of operation.</p>
+
+    <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Core Values&nbsp;
+  </p>    
+</b></div>
+<hr> 
+<p></p>
+ <p style="color:#000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+  
+
+- Honesty, Commitment and Dedication to Duty.<br>
+- Respect and Regard for both Customers and Fellow Staff.<br>
+- Customer Satisfaction and Community Development are our Priorities.<br>
+- Positive Contribution to the Entire Rural Banking Industry.<br>
+</p>
+
+    <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Social Responsibility&nbsp;
+  </p>    
+</b></div>
+<hr> 
+<p></p>
+ <p style="color:#000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+  <br>
+Over the years Citizens Rural Bank has lived up to its social responsibilities in the following areas:</p>
+<br>
+<p style="color:#000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+1.&nbsp;Supported and will continue to support brilliant but needy students in its catchment area from SHS to tertiary level.<br>
+2.&nbsp;Donated items like refrigerator and lab equipment to Nsawam Health Centre.<br>
+3.&nbsp;Donated refuse tanks to the Assemblyman to assist in cleaning and sanitation within Nsawam.<br>
+3.&nbsp;Assisted orphanage institutions like ........ orphanage school and Echoing Village Hills (NGO) with food items and cash.<br>
+4.&nbsp;Team up with the municipal assembly and Nsawam Health Centre in the annual vaccination programme to eliminate the six &nbsp;&nbsp;&nbsp;&nbsp;killer diseases.<br>
+</p>
+
+    <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Our Promises&nbsp;
+  </p>    
+</b></div>
+<hr> 
+<p></p>
+ <p style="color:#000; font-size: 14px">
+  <br>
+Our promise to Customers:</p>
+
+<p style="color:#000; font-size: 14px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif">
+Here are some resources aimed at enhancing your experience with us.<br>
+In Citizens Rural Bank, Our promise to you our valued customer is to Listen, Ask and Delight you.<br>
+We listen because we want to hear all that you have to tell us.<br>
+We ask so we can understand your needs better.<br>
+We strive to delight you because we want you to come back again.<br>
+We will treat all your personal information as private and confidential, and operate secure and reliable banking and payment systems. 
+</p>
+
+    <div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Careers&nbsp;
+  </p>    
+</b></div>
+<hr> 
+<p></p>
+<div class="clearfixb1k" style="color:#000; font-size: 14px">
+  <a target="_blank" href="img_mountains.jpg" style="color:#000; font-size: 14px">
+    <img src="careers[1].jpg" alt="Mountains" width="101" height="104"style="float:left;display:inline-block"><br >
+We offer opportunities to individuals who are willing to contribute
+to the achievement of our goals.<br> We recruit the best and offer opportunities for career growth.<br> We train and groom our staff in all facets of management and banking.<br> We also reward excellent performance so as to make your working life with us fulfilling.
+  </a>
+ 
+</div>
+ <p><br><br><br><br>
+ </p>
+<p></p>
+<div align="right" style="font-size:12px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; color:#09F"><b> Contact Details&nbsp;
+  </p>    
+</b></div>
+<hr>
+<br>
+<u><b style="font-size:12px;color:; float:left">&nbsp;&nbsp;&nbsp;<u>OFFICE LOCATIONS/ADDRESSES</u> </b></u><br><br>
+  <div class="clearfixbx" style="font-family:Verdana, Geneva, sans-serif">
+  
+ <b style="font-size:14px;">Nsawam Branch</b>
+ <br>
+ Adjacent former Magistrate Court<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233) 332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Adeiso Branch</b><br>
+ Adjacent Adeiso Taxi Rank<br>
+ P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+<div class="clearfixbx">
+ <b style="font-size:14px">Kotoku Branch</b><br>
+ Around Kotoku Lorry Station<br>
+  P.O.Box 457,Nsawam,E/R<br>
+ Tel:(+233)-332-095-531<br>
+ Email:citizensruralbank@yahoo.com<br>
+ Website:www.citizensruralbank.com.gh
+ 
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>
+  
+
+  <br>
+  </p>
+  <div class="content">
+  
+
+</div>
+
+
+   
+    
+<!-- end .content --></div>
+  <div class="">
+  
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <!-- end .sidebar2 --></div>
+   
+  <!-- end .container --></div>
+ 
+  <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</body>
+</html>
